@@ -3,44 +3,43 @@ body {
   margin: 1rem;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
 
-/* En-tête */
-
-header {
+.Header {
   display: grid;
   align-items: center;
   margin: auto;
 }
 
-Header Img {
-  height: 2.75rem;
+#logo {
   grid-area: logo;
+  height: 2.5rem;
 }
 
-.headerNav {
+.HeaderNav {
   display: flex;
   align-items: center;
-  grid-area: Navigation;
+  grid-area: navigation;
 }
 
-.headerLink {
+.HeaderLink {
   padding: 2rem;
   text-align: center;
 }
 
-.headerNav a:hover {
+.HeaderLink:hover {
   color: #0065FC;
 }
 
-.headerSignup {
+.HeaderSignUp {
+  display: flex;
+  align-items: center;
+  grid-area: SignUp;
   padding: 2rem;
   color: #0065FC;
-  grid-area: SignUp;
-}
-
-header a {
-  text-decoration: none;
-  color: black;
 }
 
 h1 {
@@ -189,16 +188,6 @@ h1 {
   box-shadow: 0 0 16px #0000002e;
   cursor: pointer;
   height: 100%;
-}
-
-.HostArt a{
-  text-decoration: none;
-  color: black;
-}
-
-.MainHost a{
-  text-decoration: none;
-  color: black;
 }
 
 .HostMore:hover {
@@ -359,15 +348,6 @@ h1 {
   margin: 1rem;
 }
 
-.footerLink a {
-  text-decoration: none;
-  color: black;
-}
-
-.footerLink a:hover {
-  color: #0065FC;
-}
-
 /* Responsive Design */
 
 @media (max-width: 1440px) {
@@ -467,6 +447,11 @@ h1 {
   }
 }
 @media (min-width: 601px) {
+  .Header {
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . navigation SignUp";
+  }
+
   .HeaderLink:hover {
     border-top: 3px solid #0065FC;
   }
@@ -478,36 +463,33 @@ h1 {
   .IconButton {
     display: none !important;
   }
-
-  header {
-    grid-template-columns: auto 1fr auto auto;
-    grid-template-areas: "logo . Navigation SignUp"
-  }
-
 }
 @media (max-width: 600px) {
-  header {
+  .Header {
     grid-template-columns: auto 1fr auto;
-    grid-template-areas: "logo . SignUp" "Navigation Navigation Navigation"
+    grid-template-areas: "logo . SignUp" "navigation navigation navigation";
   }
 
   #logo {
     order: 0;
   }
 
-  .HeaderDivSignUp {
+  .HeaderSignUp {
     order: 1;
-    text-align: center;
+  }
+
+  .HeaderNav {
+    order: 2;
   }
 
   .HeaderLink {
-    order: 2;
+    border-top: none;
+    border-bottom: 3px solid #F2F2F2;
     width: 50%;
-    border-bottom: 4px solid #F2F2F2;
   }
 
   .HeaderLink:hover {
-    border-bottom: 4px solid #0065FC;
+    border-bottom-color: #0065FC;
   }
 
   .SearchInput {

@@ -1,5 +1,6 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+
+<html lang="fr">
 
   <head>
 
@@ -9,24 +10,24 @@
     <script src="https://kit.fontawesome.com/d5d9bbf458.js"></script>
     <title>Reservia</title>
 
-    </head>
+  </head>
 
   <body>
-    <!-- En-tête-->
-    <header>
-      <img id="logo" src="images/logo/reservia.svg" alt="logo de l'agence">
+    <!-- HEADER -->
+    <header class="Header">
+      <img id="logo" src="images/logo/reservia.svg" alt="Reservia">
       <nav class="HeaderNav">
-        <a href="#hebergements" class="HeaderLink ">Hébergements</a>
-        <a href="#activites" class="HeaderLink">Activités</a>
+        <a class="HeaderLink" href="#hebergements">Hébergement</a>
+        <a class="HeaderLink" href="#activites">Activités</a>
       </nav>
-      <a href="#" class="HeaderSignUp">S'inscrire</a>
+      <a class="HeaderSignUp" href="#">S'inscrire</a>
     </header>
 
 
     <!-- Barre de recherche -->
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
     <p>En plein centre ville ou en pleine nature</p>
-    <form action="" method="post" class="SearchInput">
+    <form action="#" method="post" class="SearchInput">
       <span class="SearchInputIcon">
         <i class="fas fa-map-marker-alt"></i>
       </span>
@@ -84,6 +85,7 @@
              <img
                class="HostImg"
                src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+               alt="Image Auberge la Cannebière"
              >
              <figcaption class="HostFigCap">
                <h3 class="HostImgTitle">Auberge la Cannebière</h3>
@@ -105,6 +107,7 @@
              <img
                class="HostImg"
                src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+               alt="Image Hôtel du Port"
              >
              <figcaption class="HostFigCap">
                <h3 class="HostImgTitle">Hôtel du port</h3>
@@ -126,6 +129,7 @@
              <img
                class="HostImg"
                src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+               alt="Image Hôtel les mouettes"
              >
              <figcaption class="HostFigCap">
                <h3 class="HostImgTitle">Hôtel Les mouettes</h3>
@@ -147,6 +151,7 @@
              <img
                class="HostImg"
                src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+               alt="Image Auberge de la mer"
              >
              <figcaption class="HostFigCap">
                <h3 class="HostImgTitle">Auberge de la mer</h3>
@@ -168,6 +173,7 @@
              <img
                class="HostImg"
                src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+               alt="image Auberge Le Panier"
              >
              <figcaption class="HostFigCap">
                <h3 class="HostImgTitle">Auberge Le Panier</h3>
@@ -189,6 +195,7 @@
              <img
                class="HostImg"
                src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+               alt="Image hôtel chez Amina"
              >
              <figcaption class="HostFigCap">
                <h3 class="HostImgTitle">Hôtel chez Amina</h3>
@@ -215,6 +222,7 @@
              <img
                class="PopularImg"
                src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+               alt="Image Hôtel Le soleil du matin"
              >
            </div>
            <div class="PopularTextDiv">
@@ -237,6 +245,7 @@
              <img
                class="PopularImg"
                src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+               alt="image Au coeur de l'eau Chambres d'hôtes"
              >
            </div>
            <div class="PopularTextDiv">
@@ -259,6 +268,7 @@
              <img
                class="PopularImg"
                src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+               alt="image Hôtel Tout bleu et blanc"
              >
            </div>
            <div class="PopularTextDiv">
@@ -281,47 +291,53 @@
 
     <!-- Activités à Marseille -->
     <section class="MarseilleActivity" id="activites">
-      <h1 class="ActivityTitle">Activités à Marseille</h1>
+      <h2 class="ActivityTitle">Activités à Marseille</h2>
 
       <a href="#" class="ActivityLink Activity1">
       <div class="imgActivity">
         <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-             class="imgimgActivity"></div>
+             class="imgimgActivity"
+             alt="Image vieux Port"></div>
       <p class="TxtActivity">Vieux Port</p>
       </a>
 
       <a href="#" class="ActivityLink Activity2">
       <div class="imgActivity">
         <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-             class="imgimgActivity"></div>
+             class="imgimgActivity"
+             alt="Image Fort de Pomègues"></div>
       <p class="TxtActivity">Fort de Pomègues</p>
       </a>
 
       <a href="#" class="ActivityLink Activity3">
       <div class="imgActivity">
         <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-             class="imgimgActivity"></div>
+             class="imgimgActivity"
+             alt="Image Îles du Frioul"></div>
       <p class="TxtActivity">Îles du Frioul</p>
       </a>
 
       <a href="#" class="ActivityLink Activity4">
       <div class="imgActivity">
         <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-             class="imgimgActivity"></div>
+             class="imgimgActivity"
+             alt="Image Parce National des Calanques"></div>
       <p class="TxtActivity">Parc National des Calanques</p>
       </a>
 
       <a href="#" class="ActivityLink Activity5">
       <div class="imgActivity">
         <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-             class="imgimgActivity"></div>
+             class="imgimgActivity"
+             alt="Image Notre-Dame-de-la-Garde"></div>
       <p class="TxtActivity">Notre-Dame-de-la-Garde</p>
       </a>
 
       <a href="#" class="ActivityLink Activity6">
       <div class="imgActivity">
         <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-             class="imgimgActivity"></div>
+             class="imgimgActivity"
+             alt="Image Parc Longchamp"></div>
       <p class="TxtActivity">Parc Longchamp</p>
       </a>
 
